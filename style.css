@@ -21,7 +21,7 @@ h2 {
     margin: 60px 20px 0 20px;
 }
 .kontejner1 h1 {
-    margin: 40px;
+    margin: 40px 0px 40px 0px;
 }
 .kontejner1 img {
     max-width: 350px;
@@ -38,6 +38,13 @@ h2 {
 }
 .kontejner1 a:hover {
     background-color: #407BFF;
+}
+.kontejner1 .tlacitka {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    margin-top: 30px;
 }
 .ikona {
     flex-basis: 100%;
@@ -56,4 +63,54 @@ h2 {
     width: 45px;
     height: 40px;
     margin: 20px;
+}
+@media  screen and (min-width: 640px) {
+    .box {
+        display: flex;
+    }
+    .ikona {
+        margin: 10px;
+        flex-basis: calc(100% / 3);
+    }
+    .kontejner1 img {
+        max-width: 400px;
+    }
+    .kontejner1 .tlacitka {
+        flex-direction: row;
+    }
+}
+@media  screen and (min-width: 1100px) {
+    .kontejner1, 
+    .kontejner2,
+    .kontejner3 {
+        flex-direction: row;
+        text-align: left;
+        margin: 60px 80px 0 80px;
+        justify-content: space-between;
+    }
+    .box1 {
+        order: 1;
+    }
+    .obr1_1 {
+        order: 2;
+        margin: 0 90px 0 90px;
+        max-width: 425px;
+    }
+    .kontejner1 .tlacitka {
+        justify-content: flex-start;
+    }
+
+    .druhy {
+        order: 1;
+    }
+    .text2 {
+        order: 2;
+        flex-basis: 430px;
+    }
+    .box {
+        flex-basis: 550px;
+    }
+    .text3 {
+        flex-basis: 430px;
+    }
 }
